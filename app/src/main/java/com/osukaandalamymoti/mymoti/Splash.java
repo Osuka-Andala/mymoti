@@ -27,12 +27,12 @@ public class Splash extends Activity {
         an.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
-                
+
             }
 
             @Override
             public void onAnimationEnd(Animation animation) {
-
+                iv.startAnimation(an2);
                 finish();
                 Intent i = new Intent(this,MainActivity.class);
                 startActivity(i);
